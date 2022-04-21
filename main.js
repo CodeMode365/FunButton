@@ -12,8 +12,13 @@ butN.addEventListener('click', function changer(){
 let R = Math.round(Math.random()*255);
 let B = Math.round(Math.random()*255);
 let G = Math.round(Math.random()*255);
-    let col ='rgb('+R+','+G+','+B+')';
+let alp = Math.random()*1;
+console.log(alp)
+
+
+
+    let col ='rgba('+R+','+G+','+B+','+alp+')';
     console.log(col);
-    document.body.firstElementChild.style.backgroundColor ='rgb('+R+','+G+','+B+')';
+    document.body.firstElementChild.style.backgroundColor ='rgba('+R+','+G+','+B+','+alp+')';
     // changer();
 })
