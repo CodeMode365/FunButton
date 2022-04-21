@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .bulb-container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(23, 9, 70);
+            /* overflow: hidden; */
+        }
+       #button{
+            width: 9rem;
+            height: 5rem;
+            border-radius: 20px;
+            /* box-shadow: 0 0 10px gold, 0 0 15px gold, 0 0 20px gold, 0 0 25px gold, 0 0 30px gold; */
+            background-color: gold;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px 5px rgb(255, 228, 78), 0 0 115px rgb(255, 235, 119), 0 0 30px gold, 0 0 45px rgb(255, 222, 38), 0 0 75px 25px rgb(247, 220, 68);
+            /* display: none; */
+        }
+        button p{
+            font-family: cursive;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb-container">
+         <button id="button"><p>Light out</p></button>
+    </div>
+</body>
+</html>
