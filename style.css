@@ -1,9 +1,9 @@
-
-body{
+body {
     overflow: hidden;
 
 }
-.bulb-container{
+
+.bulb-container {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,12 +13,13 @@ body{
     background-blend-mode: lighten;
     /* display: none; */
     margin: 0;
-    padding:0;
+    padding: 0;
 
 
 
 }
-#button{
+
+#button1 {
     width: 9rem;
     height: 5rem;
     border-radius: 20px;
@@ -28,17 +29,18 @@ body{
     /* box-shadow: 0 0 80px 30px black; */
 
 }
-button:hover{
+
+#button1:hover {
     cursor: pointer;
     /* display: none; */
     border: 3px solid rgb(254, 253, 253);
-    animation:  shadowOut 5s infinite linear;
+    animation: shadowOut 5s infinite linear;
 }
 
-    button:hover::before {
+#button1:hover::before {
     content: '';
     animation: lightout 5s infinite linear;
-    position:relative;
+    position: relative;
     border: 0.1px solid gold;
     border-radius: 50px;
     display: flex;
@@ -50,67 +52,193 @@ button:hover{
     width: 80px;
     left: 20px;
     z-index: 1;
-        
-    }
+
+}
 
 
 @keyframes lightout {
-   0%{
-       outline: 5px solid dodgerblue;
-       outline-offset: 255px;
-   }
-   30%{
-       outline: 5px solid rgb(255, 7, 135);
-       outline-offset: 155px;
-   }
-   40%{
-       outline: 5px solid rgb(240, 255, 30);
-       outline-offset: 55px;
-   }
-   60%{
-       outline: 5px solid rgb(21, 103, 44);
-       outline-offset: 155px;
-   }
-  80%{
-       outline: 5px solid rgb(235, 0, 0);
-       outline-offset: 200;
-   }
-   100%{
-    outline: 5px solid rgb(235, 0, 0);
-       outline-offset: 255px;
-   }
-    
-    
-    
+    0% {
+        outline: 5px solid dodgerblue;
+        outline-offset: 255px;
+    }
+
+    30% {
+        outline: 5px solid rgb(255, 7, 135);
+        outline-offset: 155px;
+    }
+
+    40% {
+        outline: 5px solid rgb(240, 255, 30);
+        outline-offset: 55px;
+    }
+
+    60% {
+        outline: 5px solid rgb(21, 103, 44);
+        outline-offset: 155px;
+    }
+
+    80% {
+        outline: 5px solid rgb(235, 0, 0);
+        outline-offset: 200;
+    }
+
+    100% {
+        outline: 5px solid rgb(235, 0, 0);
+        outline-offset: 255px;
+    }
+
+
+
 }
 
-@keyframes shadowOut{
-    0%{
+@keyframes shadowOut {
+    0% {
         box-shadow: 0 0 200px 50px rgb(255, 228, 78), 0 0 115px rgb(255, 235, 119), 0 0 30px gold, 0 0 45px rgb(255, 222, 38), 0 0 75px 25px rgb(247, 220, 68);
 
     }
-    20%{
+
+    20% {
         box-shadow: 0 0 200px 50px rgb(69, 125, 255), 0 0 115px rgb(72, 250, 200), 0 0 30px rgb(255, 66, 220), 0 0 45px rgb(2, 79, 53), 0 0 75px 25px rgb(248, 30, 5);
 
     }
-    50%{
+
+    50% {
         box-shadow: none;
     }
-    70%{
+
+    70% {
         box-shadow: 0 0 200px 50px rgb(69, 125, 255), 0 0 115px rgb(72, 250, 200), 0 0 30px rgb(255, 66, 220), 0 0 45px rgb(2, 79, 53), 0 0 75px 25px rgb(248, 30, 5);
     }
-    85%{
+
+    85% {
         box-shadow: 0 0 200px 50px rgb(255, 104, 222), 0 0 115px rgb(253, 9, 9), 0 0 30px rgb(237, 243, 65), 0 0 45px rgb(9, 194, 3), 0 0 75px 25px rgb(248, 30, 5);
 
     }
-    100%{
+
+    100% {
         box-shadow: 0 0 200px 50px rgb(255, 228, 78), 0 0 115px rgb(255, 235, 119), 0 0 30px gold, 0 0 45px rgb(255, 222, 38), 0 0 75px 25px rgb(247, 220, 68);
 
     }
 }
-button p{
+
+but p {
     position: relative;
     top: -8px;
     font-family: cursive;
     font-size: 1.3rem;
+}
+
+.bubble-conatiner {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    /* left: +32px; */
+    /* border: 2px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+.bubbles {
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    border: 2px solid;
+    border-radius: 50cm;
+    margin: 0 3px;
+
+}
+
+ #bub1 {
+    position: relative;
+    background: rgba(182, 3, 3, 0.894);
+
+}
+
+
+#bub2 {
+    position: relative;
+    background: rgba(20, 2, 156, 0.854);
+    /* border-radius: ; */
+
+}
+
+#bub3 {
+    position: relative;
+    background: rgba(1, 152, 44, 0.724);
+
+}
+
+#bub4 {
+    position: relative;
+    background: rgba(158, 156, 2, 0.668);
+
+}
+
+#button2 {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    bottom: -60px;
+    /* left: 19rem; */
+    width: 8rem;
+    height: 3rem;
+    border-radius: 50px;
+    /* z-index: ; */
+}
+#button3{
+
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        bottom: -90px;
+        /* right: 15rem; */
+        align-items: center;
+        justify-content: center;
+        
+        /* left: 19rem; */
+        /* width: 8rem;
+        height: 3rem; */
+        border-radius: 50px;
+        visibility: hidden;
+}
+
+
+.innerButton{
+    content: '';
+    /* position: absolute; */
+
+    /* border: 2px solid black; */
+    width: inherit;
+    height: inherit;
+    /* border: 2px solid black; */
+    border-radius: inherit;
+}
+#ibut1{
+    background: rgb(255, 0, 0);
+    visibility: hidden;
+}   
+#ibut2{
+    background: rgb(8, 0, 255);
+    visibility: hidden;
+}
+#ibut3{
+    background: rgb(6, 255, 76);
+    visibility: hidden;
+}
+#ibut4{
+    background: rgb(255, 251, 9);
+    visibility: hidden;
+}
+
+button{
+    font-family: cursive;
+    font-size: 0.9rem;
 }
